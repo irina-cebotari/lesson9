@@ -1,0 +1,84 @@
+:root {
+    --bg-color-primary: gray;
+}
+
+body {
+margin: 0;
+}
+
+/* body {
+    margin: 0;
+}
+
+.wrapper {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+.sector {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 15px solid transparent;
+    overflow: hidden;
+    border-radius: 50%;
+    mix-blend-mode: overlay;
+    animation: rotate var(--duration) linear infinite;
+}
+
+.sector1 {
+    border-bottom: 15px solid yellowgreen;
+    --duration: 1.5s;
+}
+
+.sector2 {
+    border-left: 15px solid blueviolet;
+    --duration: 1s;
+}
+
+.sector3 {
+    border-top: 15px solid darkorange;
+    --duration: 2s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+} */
+
+
+.linear {
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(90deg, yellowgreen, gray);
+    background-size: 300%;
+    background-position: left;
+    animation: bg-animation 20s alternate infinite;
+}
+
+@keyframes bg-animation {
+    0% {
+        background-position: left;
+    }
+
+    50% {
+        background-position: center;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+
